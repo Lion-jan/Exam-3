@@ -1,0 +1,35 @@
+#access{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column ;
+    gap: 110px;
+    .topic{
+        text-align: center;
+        h4{
+            @include h4();
+        }
+
+        p{
+            @include p();
+        }
+    }
+
+}
+
+@media (max-width:950px) {
+    .images{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .topic h4{
+        font-size: 28px !important;
+    }
+
+    .topic p{
+        font-size: 16px !important;
+    }
+    
+}

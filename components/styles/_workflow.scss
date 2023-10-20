@@ -1,0 +1,32 @@
+#workflow{
+    text-align: center;
+    .title{
+        .topic{
+            h4{
+                @include h4();
+
+            }
+
+            p {
+                @include p();
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .boxs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 100px;
+        .box{
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+
+}
